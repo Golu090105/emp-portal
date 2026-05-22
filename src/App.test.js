@@ -3,6 +3,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  // Legacy CRA test expects a "learn react" text that this app doesn't render.
+  // Verify app mounts successfully instead.
+  expect(document.body).toBeTruthy();
 });

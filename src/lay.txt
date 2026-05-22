@@ -1,0 +1,15 @@
+src/
+├── components/
+│   └── Navbar.jsx          ← shared nav with NavLink
+├── pages/
+│   ├── EmployeeProfile.jsx  ← your base file (already have)
+│   ├── EmployeeOnboarding.jsx
+│   ├── EmployeeExtension.jsx
+│   └── EmployeeTransfer.jsx
+├── routes/
+│   ├── ProtectedRoute.jsx   ← guards all pages
+│   └── AppLayout.jsx        ← has <Outlet /> for nested routes
+├── context/
+│   └── AuthContext.jsx      ← holds login state globally
+├── App.jsx                  ← all routes defined here
+└── main.jsx                 ← wraps app in <BrowserRouter>
